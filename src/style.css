@@ -1,0 +1,29 @@
+html,
+body,
+main {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+
+#wrapper-outer {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#renderCanvas {
+  width: 90vw;
+  height: 90vh;
+  min-height: 5rem;
+}
