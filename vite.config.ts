@@ -10,7 +10,7 @@ export default defineConfig({
     //host: "0.0.0.0",
     //https://github.com/vitejs/vite/issues/4259
     hmr: {
-      port: 443
+      clientPort: 443
     }
   }
 });
