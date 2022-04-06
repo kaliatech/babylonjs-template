@@ -81,3 +81,19 @@ axes.zAxis.parent = sphere;
 babylonEngine.runRenderLoop(() => {
   scene.render();
 });
+
+//Uncomment to use Babylon Debug/Inspector.
+//Will also need to install: `npm i @babylonjs/inspector@X.Y.Z -D`
+//-----
+// void Promise.all([
+//   import("@babylonjs/core/Legacy/legacy"),
+//   import("@babylonjs/core/Debug/debugLayer"),
+//   import("@babylonjs/inspector")
+// ]).then(() =>
+//   scene.debugLayer.show({
+//     handleResize: true,
+//     embedMode: true,
+//     overlay: true
+//   })
+// );
+//-----
