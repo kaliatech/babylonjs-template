@@ -9,6 +9,7 @@ import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight.js";
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder.js";
 import { Scene } from "@babylonjs/core/scene.js";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial.js";
+import { Tools } from "@babylonjs/core/Misc";
 import { Vector3 } from "@babylonjs/core/Maths/math.vector.js";
 
 // Required for EnvironmentHelper
@@ -16,7 +17,6 @@ import "@babylonjs/core/Materials/Textures/Loaders";
 
 // Enable GLTF/GLB loader
 import "@babylonjs/loaders/glTF";
-import { Tools } from "@babylonjs/core";
 
 // Get canvas element for rendering
 const canvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
