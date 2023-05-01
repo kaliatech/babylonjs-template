@@ -1,15 +1,16 @@
 import "./style.css";
 
 import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera.js";
-import { AxesViewer } from "@babylonjs/core/Debug/axesViewer";
+import { AxesViewer } from "@babylonjs/core/Debug/axesViewer.js";
 import { Color3 } from "@babylonjs/core/Maths/math.color.js";
 import { Engine } from "@babylonjs/core/Engines/engine.js";
-import { EnvironmentHelper } from "@babylonjs/core/Helpers/environmentHelper";
+import { ThinEngine } from "@babylonjs/core/Engines/thinEngine.js";
+import { EnvironmentHelper } from "@babylonjs/core/Helpers/environmentHelper.js";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight.js";
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder.js";
 import { Scene } from "@babylonjs/core/scene.js";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial.js";
-import { Tools } from "@babylonjs/core/Misc";
+import { Tools } from "@babylonjs/core/Misc/tools.js";
 import { Vector3 } from "@babylonjs/core/Maths/math.vector.js";
 
 // Required for EnvironmentHelper
@@ -78,6 +79,8 @@ axes.yAxis.parent = sphere;
 axes.zAxis.parent = sphere;
 
 // Run render loop
+
+// This does not seem to work with TypeScript 5.x and certain TSConfig settings
 babylonEngine.runRenderLoop(() => {
   scene.render();
 });
