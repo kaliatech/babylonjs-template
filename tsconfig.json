@@ -8,7 +8,7 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ES2022",
-    "moduleResolution": "Node",
+    "moduleResolution": "Node16",
     "noEmit": true,
     "noEmitOnError": true,    
     "outDir": "build",

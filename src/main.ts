@@ -80,10 +80,23 @@ axes.zAxis.parent = sphere;
 
 // Run render loop
 
+// ---------------------------------
+
 // This does not seem to work with TypeScript 5.x and certain TSConfig settings
 babylonEngine.runRenderLoop(() => {
   scene.render();
 });
+
+// ... but this does:
+// (babylonEngine as unknown as ThinEngine).runRenderLoop(() => {
+//   scene.render();
+// });
+
+// Note also that this does not work, but it should:
+//const castToThinEngine = babylonEngine as ThinEngine;
+
+
+// ---------------------------------
 
 //Uncomment to use Babylon Debug/Inspector.
 //Will also need to install: `npm i @babylonjs/inspector@X.Y.Z -D`
